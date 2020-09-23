@@ -1,0 +1,180 @@
+Bits
+Bits are a single entry of data, a 1 or a 0 that the computer can read and understand as on or off.
+these bits are combined together to tell the computer everything it needs to know.
+for example 0100 0001 is the letter A.
+these conversions are stored in a format called ASCII.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bytes
+Computer storage works 8 bits at a time.
+with that many bits in a row we can create 256 unique combinations.
+to make it easier for people using computers we call these sections bytes.
+8 bits are 1 byte.
+Bits are read left to right and have a space in the middle (i.e. 0100 0001).
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bytes
+Usually the operating system tells your computer how to break up your bytes, you most liekly have a x64 bit OS (if you are downloading files you have seen this before).
+The 64 bit means that data is usually stored in a 8 byte format for instance : a = 00000000 00000000 00000000 00000010
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Byte conversions
+Saying we have 1,000,000 bytes of storage is cumbersome, so we convert every 1000 into a shorter way of saying it.
+For example 1,024 bytes is a kilobyte and 1,048,576 bytes is a megabyte.
+And now we can use code to help us with conversions.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bytes to Decimal to Hexadecimal
+Every counting system is done with a base in mind, how many times you count before miving to the next digit.
+We count in a base 10 system. 0-9 and then we move to the tens place which has its hown 0-9
+Bytes are in binary which is a base 2 system. 0-1 and then it moves to the next digit.
+Hexadecimal is in base 16. 0-9, A,B,C,D,E,F and then it changes to the next digit.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Decimal     Binary      Hexadecimal
+0           0000        0
+1           0001        1
+2           0002        2
+3           0010        3
+10          0110        A
+15          1111        F
+16          0001 0000   10
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+25/2 = 12R1
+12/2 = 6R0
+6/2 = 3R0
+3/2 = 1R1
+1/2 = 0R1
+0001 1001
+
+103/2 = 51R1
+51/2 = 25R1
+25/2 = 12R1
+12/2 = 6R0
+6/2 = 3R0
+3/2 = 1R1
+1/2 = 0R1
+
+0110 0111
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+843/2 = 421R1
+421/2 = 210R1
+210/2 = 105R0
+105/2 = 52R1
+52/2 = 26R0
+26/2 = 13R0
+13/2 = 6R1
+6/2 = 3R0
+3/2 = 1R1
+1/2 = 0R1
+
+0000 0011 0100 1011
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hexadecimal
+
+19/16 = 1R3
+1/16 = 0R1
+13
+
+129/16 = 8R1
+8/16 = 0R8
+81
+
+30/16 = 1RE
+1/16 = 0R1
+1E
+
+60/16 = 3RC
+3/16 = 0R3
+3C
+
+222/16 = 13R14 (E)
+13/16 = 0R13 (D)
+DE
+
+
+1101 0110 = 214
+
+0101 1110 = 94
+
+31 = 49
+
+AA = 170
+
+3E = 62
+
+
+A2 = 162
+162/2 = 81R0
+81/2 = 40R1
+40/2 = 20R0
+20/2 = 10R0
+10/2 = 5R0
+5/2 = 2R1
+2/2 = 1R0
+1/2 = 0R1
+1010 0010
+
+128/2 = 64R0
+64/2 = 32R0
+32/2 = 16R0
+16/2 = 8R0
+8/2 = 4R0
+4/2 = 2R0
+2/2 = 1R0
+1/2 = 0R1
+
+1011 1010
+2+8+16+32+128
+
+255/2 = 127R1
+127/2 = 63R1
+63/2 = 31R1
+31/2 = 15R1
+15/2 = 7R1
+7/2 = 3R1
+3/2 = 1r1
+1/2 = 0r1
+
+46/2 = 23R0
+23/2 = 11R1
+11/2 = 5R1
+5/2 = 2R1
+2/2 = 1R0
+1/2 = 0R1
+
+
+1001 1101
+1+4+8+16+128
+
+234/2 = 117R0
+117/2 = 58R1
+58/2 =  29R0
+29/2 = 14R1
+14/2 = 7R0
+7/2 = 3R1
+3/2 = 1R1
+1/2 = 0r1
+
+1110 1010
+
+0110 1100
+4+8+32+64
+
+A3
+160+3
+
+F7
+240+7
+
+247/2 = 123R1
+123/2 = 61R1
+61/2 = 30R1
+30/2 = 15R0
+15/2 = 7R1
+7/2 = 3R1
+3/2 = 1R1
+1/2 = 0R1
+
+1111 0111
+1+2+4+16+32+64+128
+
+97/16 = 6R1
+6/16 = 0R6
+61

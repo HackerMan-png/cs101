@@ -1,0 +1,5 @@
+git branch [BRANCH] // creates a new branch
+git checkout [BRANCH] // switches to a different branch
+git checkout -b [BRANCH] // creates a new branch and switches to it
+git diff // shows what was added since you last commited
+git [command] --help // will show a help page for that command

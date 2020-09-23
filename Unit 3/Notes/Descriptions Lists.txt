@@ -1,0 +1,182 @@
+Decription Lists
+    These are used to cratea list of items <dt> and a small description under them<dd>
+    Example:
+    <dl>
+        <dt>Red</dt>
+        <dd>This means stop</dd>
+    </dl>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Links
+    In order to create a link that someone can click on you need to create an <a> tag. This stands for anchor tag.
+    An anchor tag looks like this:
+    <a href="West-MEC.org"> the Wesst-MEC homepage</a>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Email Links
+    You can create links that will open to an email
+    The default mailer will be Outlook on PC
+    The name that you type into the hred will be automatically put into the send to address
+    When you create your href add the mailto: qualifier.
+    Example:
+    <a hred"mailto:kyle.peck@west-mec.org">Send me an email</a>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Advanced Email Links
+    You can add body and subject in the code as well
+    %20 is the unicode for a space
+    <a href="mailto:nowhere@mozilla.org ?cc=name2@rapidtables.com&bbc=name3@rapidtables.com&subject="The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Abbreviations
+    When you want to shorten a word you need to use the abbr tag
+    This will let you tell the user, using code, that the word is short for something and add the full work as an attribute
+    <p>
+        We use
+        <abbr title="Hypertext Markup Language">HTML</abbr>
+        
+    </p>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Addresses
+    The <address> tag is used to distinguish that you are listing address information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Superscript and subscript
+    If you want to have your numbers above or below the rest you need <sup> and <sub>
+    <p>My birthday is on the 25<sup>th</sup> of may 2001.</p>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Typing Code into Your HTML
+    <code>
+        Formats your text to look like coding font
+    <pre>
+        Retains whitespace, useful for indents when typing code
+    <var>
+        Signifies it as a variable name
+    <kdb>
+        For marking keyboard inputs
+    <samp>
+        For marking up the output of computer program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Times and Dates
+    <time datetime="">
+        There are TONS of ways that you can do date time.
+    Example:
+    <time datetime="19:30:01.856">19:30:01.856</time>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Basic Parts of a Webpage
+    Nav bar Left Side
+    Search bar Top / Top Right
+    Logo Top Left
+    Sign in Option Top Right
+    Recomended Content Near the Top
+    Home button in the Top Left
+    Contact information at the Bottom
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Header
+    The header is a large strip at the top of the page
+    Usually this includes the logo, a search bar, the name of the company or site, or sometimes a motto.
+    This is also usually the part of the site with the most colors and sets the theme for the rest of the site.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Navigation Bar
+    This is a smaller bar, usually under the header bar or sometimes included in the header bar
+        This is a list of all the places that you can go to on the site and provides a nice organization to the site.
+        The nav bar should be consistent across the whole site, when you move to a new page the bar should not change.
+        While you can include it in the header it is better to have it seperate since it helps withscreen readers.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Article
+    The main content of your work
+        This is usally in the center of the page and takes up the most space in the layout.
+        This can be almost everything depending on what the focus of your website is for
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sidebar
+    Referred to as the <aside> tag, it appears on the edge of the screen.
+        This runs along the side of the article
+        Holds links to related content, recently visited link, or ads that run.
+        Usually has different colors or fonts
+        Can be used as a secondary navbar in some sites.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Footer
+    A small strip along the bottom of the page
+        Containts copyright, cites, names of authors, addresses, and/or phone numbers.
+        Usually a smaller print and something that is an afterthought, a place only the more invested usuers look to.
+        The footer can also be used for SEO(Search Engine Optimization)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tags for the Parts
+    Header
+        <header>
+    Navigation Bar
+        <nav>
+    Main
+        <article>, <main>, <section>, and <div>
+    Sidebar
+        <aside> and <div>
+    Footer  
+        <footer>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Non-Specific Tags
+    There are 2 tags that you can use for anything (not that you should)
+    The <div> tag should be used when you want to declare a special class or id in the code.
+        <div id="copyright">Copyright 2050 by me.</div>
+    <span> is used for smaller changes that you want to apply within the text.
+        <p>
+        <span style="font-size: larger;"Copyright</span> 2050 by nobody.
+        </p>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Horizontal Rule
+    You can add a long line across your page that will help you section off your work.
+    It is a great way to seperate your sections in a blog or in a new article setting
+        <p>Example blah blah
+        <hr>
+        blah blah next thought
+        </p>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unicode
+    Unicode is the reserved code that the computer has for symbols and text.
+    When creating a Unicode use &#; and the code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Web Forms
+    Web Form Intro
+        Web forms are the most basic way to colledct information from the user.
+        Forms allow the user to enter data allows the coder to format the data, you can qualify what can go where.
+        Normally this information is then sent to storage on a server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The <form> Element
+    When you use <form> to create a form there a re 2 important attributes that you need to keep in mind
+    action = "URL"
+        This defines where the forms collected data should be stored when it is submitted
+    method = "POST"
+        This defines which HTTP method to send the data with, usally equals "GET" or "POST"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<label> Element 
+    When creating form inputs it is good (not required) to always include labels on all of your form inputs.   
+    The label will have a for attribute that will associate with an id attribute in the prompt.
+    This should also be where you add the header for the input area.
+    <label for="name">Name:</label>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<input> Element
+    The input element will create a small line where you are able to input code.
+    List of attributes that are always included:
+        Id="" : This is the same as the for in the label.
+        type="" : This has a few values but should match the expected input
+        name=" : How you will identify this input
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user.name">
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<textarea> element
+    This will create a large area that someone can enter in paragraphs or longer messages.
+    Required attributes:
+        id="" :that matches the for
+        name="" :that is unique to the input
+    Non-Required attributes:
+        cols = "#" rows = "#" : will increase the size of the box
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<button> Element
+    This will create a small button on the page that the user can interact with
+    There is only 1 attribute we care about right now and that is type
+        type="" : can be submit, reset, or button
+        Submit will send the information to the action attribute of the form element.
+    <li class="button">
+        <button type="submit">Submit your Work</button>
+    </li>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<fieldset> and <legend>
+    When creating any kind of widget on HTML (like a form) you should always use fieldset and legend.
+        <fieldset> signifies that the content between will be in a single group
+        <legend> titles the fieldset and helps screen readers.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

@@ -1,0 +1,47 @@
+Using Components with Known Vulnerabilities
+How to tell if the application is vulnerable
+If you are unaware of what components you are using
+This applies to both the client and server sides and direct compoenents as well as nested dependencies
+Test regularly
+Are the underlying platforms updated?
+If you do not secure the components configurations
+
+How to prevent
+Frequently check for vulerabilities
+Test code compatibilty
+update any outdated software
+Only obtain website compnents from reputable sources
+Path any old vulnerabilities
+Know what componenets and which version you are using
+Don't use open source components unless you know ways to patch vulnerabilities
+
+Example Attack Scenarios
+Poorly encrypted password database
+If source code gets leaked, hackers can look right at the code and see the vulnerabilities
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Misconfiguration is when a device or application's security protocols are either:
+    Not set up
+    Set up but not well
+This can lead to countless data breaches in even some of the biggest companies.
+
+Your application may be vulnerable if:
+    You're missing the appropritate system hardening
+    The software is out of date
+    You have insufficient firewall protection
+
+How do you prevent it?
+    Harding is going into a device and providing the best security you can without an antivirus software.
+    This includes: closing ports, uninstalling pointless freatures, and configuring a firewall.
+    When system hardening, your goal is to reduce security risk and decrease your "attack surface" otherwise known as the points that an attacker could try to enter from.
+
+Close unnecessary ports
+A port is basically a door into the network, so closing any that you don't use is like locking the window so burglars can't get in.
+
+Update your applications
+Many applications have minor breaches and those are fixed in minor updates, so be sure to keep up to date to fix these issues.
+
+Configure your firewall
+This is a part of hardening but is important enough to warrant it's own slide. hardening your device will provide the best security you can get without installing 3rd party softwares.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
