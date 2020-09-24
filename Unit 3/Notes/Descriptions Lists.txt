@@ -179,4 +179,19 @@ The <form> Element
         <fieldset> signifies that the content between will be in a single group
         <legend> titles the fieldset and helps screen readers.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+Multimedia Embedding
+    <img src=URL> how you post a picture that is associated with that address.
+    The URL can also be a file in your directory if you have it downloaded and saved.
+    <img> src="images/face.png>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+images
+    You shoud be defining the width and height for images as well.
+    This can be a percent of the page or a flat pixel amount (pixel is better) but if you don't define it then your formatting will look very gross
+    width=""
+    height-""
+    Images also need titles, a short description that the user will see when they hover over the image.
+    title = "description"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Background Images 
+    You can also add background images at any time by using CSS
+    Let's add an inline style tag and make one of the images a background image
