@@ -14,10 +14,10 @@ Links
 Email Links
     You can create links that will open to an email
     The default mailer will be Outlook on PC
-    The name that you type into the hred will be automatically put into the send to address
+    The name that you type into the href will be automatically put into the send to address
     When you create your href add the mailto: qualifier.
     Example:
-    <a hred"mailto:kyle.peck@west-mec.org">Send me an email</a>
+    <a href"mailto:kyle.peck@west-mec.org">Send me an email</a>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Advanced Email Links
     You can add body and subject in the code as well
@@ -157,7 +157,7 @@ The <form> Element
         <label for="name">Name:</label>
         <input type="text" id="name" name="user.name">
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<textarea> element
+<textarea> Element
     This will create a large area that someone can enter in paragraphs or longer messages.
     Required attributes:
         id="" :that matches the for
@@ -184,7 +184,7 @@ Multimedia Embedding
     The URL can also be a file in your directory if you have it downloaded and saved.
     <img> src="images/face.png>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-images
+Images
     You shoud be defining the width and height for images as well.
     This can be a percent of the page or a flat pixel amount (pixel is better) but if you don't define it then your formatting will look very gross
     width=""
@@ -195,3 +195,41 @@ images
 Background Images 
     You can also add background images at any time by using CSS
     Let's add an inline style tag and make one of the images a background image
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Video Element
+    To add a video to your page you can use the <video> tag
+    Just like images and anything else that uses another file in the system you need to use the attribute src
+    <video src="../Unit 3/Video-and-Audio-Samples/rabit320.mp4"></video>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Videos
+    Videos are different from images because we need to start, stop, pause, rewird, etc...
+    In order to control the video we need to add the control attribute
+    When creating a video you can add text in the block incase the video breaks.
+    This should be link to the video for people whose browsers can't handle it.
+    This is usually done with a <p> tag
+    Different devices and different sofrware can ccess these videos in different ways and may expect different formats in order to work properly
+    Because of this it is usually best to provide the same video in multiple formats so you can fix it. You can do this with the <source> tag
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Video BONUS ATTRIBUTES
+    Width and height
+        same as image
+    Autoplay
+        video will play when it loads
+    Loop
+        video will repeat when it ends
+    Muted
+        video loads with the sound off
+    Poster="url"
+        loads and image at the start of the video
+    preload = "none"
+        this does not buffer the file
+    preload = "auto"
+        buffers the media file
+    preload = "metadata"
+        buffers only the metadata for the file(not very useful videos.)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Audio
+    Audio does not support width and height since there are no images to size
+    It also does not support the poster attribute since there is no place to put an opening thumbnail
+    Everything else is the same
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
