@@ -20,8 +20,14 @@
             <!-- User Sign In -->
             <fieldset>
                 <legend>Sign In</legend>
-                <ul>
-                    <li><label for="user.Login"></label></li>
+                <ul style="list-style-type: none;">
+                    <li>User Name<br><label for="user.Login"></label>
+                        <input type="text" id="user.Login" name="userLogin">
+                    </li>
+                    <li>Password<br><label for="user.Pass"></label>
+                        <input type="password" id="user.Pass" name="userPass">
+                    </li>
+                    
                 </ul>
             </fieldset>
             <!-- For pizza size -->
@@ -91,6 +97,12 @@
                         </label></li>
                 </ul>
 
+            </fieldset>
+            <fieldset>
+                <legend>Extra Requests or Information</legend>
+                <ul style="list-style-type: none;">
+                    <li>Any extra requests or information<br><label for="user.Info"></label><textarea id="user.Info" name="user Info" cols="60" rows="12" style="resize: none;"></textarea></li>
+                </ul>
             </fieldset>
             <!-- Payment Information -->
             <fieldset>
