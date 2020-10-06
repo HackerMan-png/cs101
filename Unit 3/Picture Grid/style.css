@@ -1,0 +1,106 @@
+html {
+  background-color: grey;
+}
+body {
+  background-color: white;
+  margin: 50px;
+}
+nav {
+  background-color: rgb(197, 161, 129);
+}
+a{
+    text-decoration: none;
+}
+.container {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-rows: auto;
+  grid-template-columns: 250px 250px 250px 250px 250px;
+  position: relative;
+
+grid-template-areas:
+    "Logo Logo Logo Logo Facebook"
+    "Logo Logo Logo Logo Twitter"
+    "Logo Logo Logo Logo Masks"
+    "Logo Logo Logo Logo Masks"
+    "Birthday Birthday Makeup Costumes Wigs"
+    "Birthday Birthday Makeup Costumes Wigs"
+    "Birthday Birthday Makeup Costumes Wigs"
+    "Outfit Sale Sale Candy Hats"
+    "Outfit Sale Sale Candy Hats"
+    "Outfit Christmas Classic Classic Shipping"
+    "Props Christmas Halloween1 Halloween2 Witches"
+    "Dark Rainbow Rainbow . Address";
+}
+.cell-a {
+  grid-area: Logo;
+
+}
+.cell-b {
+  grid-area: Facebook;
+}
+.cell-c {
+  grid-area: Twitter;
+}
+.cell-d {
+  grid-area: Masks;
+}
+.cell-e {
+  grid-area: Birthday;
+}
+.cell-f {
+  grid-area: Makeup;
+}
+.cell-g {
+  grid-area: Costumes;
+}
+.cell-h {
+  grid-area: Wigs;
+}
+.cell-i {
+  grid-area: Outfit;
+}
+.cell-j {
+  grid-area: Sale;
+}
+.cell-k {
+  grid-area: Candy;
+}
+.cell-l {
+  grid-area: Hats;
+}
+.cell-m {
+  grid-area: Props;
+}
+.cell-n {
+  grid-area: Christmas;
+}
+.cell-o {
+  grid-area: Classic;
+}
+.cell-p {
+  grid-area: Shipping;
+}
+.cell-q {
+  grid-area: Halloween1;
+}
+.cell-r {
+  grid-area: Halloween2;
+}
+.cell-s {
+  grid-area: Witches;
+}
+.cell-t {
+  grid-area: Dark;
+}
+.cell-u {
+  grid-area: Rainbow;
+}
+.cell-v{
+    grid-area: Address;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    color: orange;
+}
