@@ -1,0 +1,66 @@
+/* h1{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+	color: cadetblue;
+	border-bottom: 2px solid cadetblue;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.job-title{
+	color:grey;
+	font-weight: bold;
+	font-size: large;
+}
+ul{
+	border: 2px solid magenta;
+	width: 30%;
+}
+h2{
+	font-weight: bold;
+	font-size: 2em;
+}
+a{
+	color: orangered
+}
+p{
+	width: 50%;
+	float: left;
+}
+
+#Proper-Name{
+	text-decoration: underline dotted black;
+	color: aquamarine;
+} */
+
+a::after{
+	content: ".com";
+}
+a[href]:hover{
+	text-decoration: none;
+}
+a{
+	display: inline-block;
+}
+a[href]::first-letter{
+	display: inline-block;
+	font-size: 2em;
+	font-family: fantasy;
+}
+a[href="https://google.com"]{
+	color:red;
+}
+a[href="https://wikipedia.com"]{
+	color: grey;
+}
+a[href="https://W3schools.com"]{
+	color: limegreen;
+}
+a[href="https://https://Mdn.com"]{
+	color: lightblue;
+}
+a[href="https://github.com"]{
+	color: green;
+}
+
+

@@ -1,0 +1,101 @@
+Basic CSS
+	When a website loads it does things in a specific order:
+		First it parses the HTML (changes from code to computer logic)
+		Then it creates the DOM (talk about that more later)
+		And then it applies the CSS to the finished DOM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The DOM
+	The Document Object Model is kind of like a tree with branches that are all spread out
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Applying CSS to the DOM
+	When creating the CSS selector it will look through the tree
+	Then find the part of the tree that will matches the selector, changing the style sheet for that part
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finally Good News
+	Just like HTML, CSS will not break when you mess up your code
+	Since your selector does not create new code, just modifies existing code when you mess up and misspell something it will just skip that command since it does not match a branch in your DOM.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Internal, External, and Inline
+	You can add CSS in 3 ways:
+		External (most common way)
+			Creating a CSS file and linking it in the head
+		Internal
+			Using the <style> element
+		Inline
+			Using the style attribute
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Specificity
+	Specificity refers to how specific you are when calling your selector
+	The more specific you are the better, less specific styles willbe overwritten
+	.special is more specific than p so the text would be red
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Order Matters
+	If you have 2 selectors with equal specificity the newest one (the one called on later line number) will be chosen and overwrite the older one
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CSS Rulesets
+	The things that you put inside of the selector brackets are called properties and values. Put these all together and you get a ruleset
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Defintions
+	CSS selector:
+		Chooses a DOM element
+	CSS property
+		Changes a part of it
+	CSS value
+		States how the property should changes
+	CSS Declaration
+		When a property is paired with a value
+	CSS Declaration Block
+		When several properties are paired with several values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Functions
+	CSS usually just works in a simple values and units but there is a way to to do functiions using calc.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@rules
+	There are 2 @rules that you will need to know
+	@ import
+		Loads a different CSS sheet into your CSS, a great way to load a reset style sheet without having to link two in HTML
+	@ media
+		Shows which styles should be shown when a certain value is met
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Comments
+	Just as you would expect, you write comments differently for CSS as well nothing is easy in coding
+		HTML <!-- -->
+		CSS /* */
+		JS //
+	Comments should be around when needed. Consider talking about what the rule set is doing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+White Space
+	You can use all of the white space you want around the properties
+	Inside of the properties and rulesets you need to be careful
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Selectors
+	The word at the start of CSS are called selectors. They tell the DOM where the different styles will be applied.
+	Normally your selectors can simply be the element that you want to change.
+		p{},  h1{}, a{}, etc
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Classes and IDs
+	You will want to choose specific elements from time to time. Maybe 1 <p> that holds a formula and you don't want to affect everty <p>
+	For this we use classes and IDs. You can give any element in HTML a special name that you can reference
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Classes
+	A class is a property in HTML that will mark a consistent theme in your code.
+	A class should be used if you need to change more than one thing
+		i.e. if you want to make columns in your work then the class="col" should be used to define every column in HTML
+	You call a class in css by using a "." before the selector
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IDs
+	IDs are like classes in that they modify an element to make it easier to call out in the CSS
+	IDs should be used for very specific changes. Every ID should be unique or it should be a class
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Universal Selector
+	If you want to select everything on the page you can use the asterisk "*"
+	If you want to move the margins and padding from everything use 
+	*{
+		margin: 0; padding: 0;
+	}
+	This has extremely low specificity and will be overwritten by almost everything
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Attribute Selectors
+	You can use selectors that will affect an element based on what attributes on what attrivutes are present or if the attribute has specific value for that attribute
