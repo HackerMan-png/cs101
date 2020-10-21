@@ -1,0 +1,24 @@
+p{
+	color: purple;
+
+}
+span{
+	border: 1px dashed black;
+	background-color: yellowgreen;
+}
+
+header{
+	border: solid 3px black;
+	font-size: 3em;
+}
+
+header div{
+	width: calc(60%);
+	background-color: salmon;
+}
+
+@media(max-width: 300px){
+	img{
+		transform: rotate(180deg);
+	}
+}
