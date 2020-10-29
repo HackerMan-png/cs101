@@ -1,0 +1,65 @@
+The Comparers
+    We already went over these but the 3 ways to compare things are:
+    ==
+        Checks the 2 values after converting everything to strings
+    ===
+        Checks the two values without converting
+    Object.is()
+        Checks the two values without handling + or - or NaN
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Comparisions
+    When you compare things you will always get either true or false
+    You need to tell the computer what the 2 things are that need to be compared and then how to compare them.
+    Ex. alert(2 = 2) // true
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Number Comparisions
+    Thi is pretty obvious...
+    You compare numbers just like math and it's either true or false just like math
+    Ex. alert(5 > 5) //false
+        alert(4 <= 5) //true
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+String Comparisions
+    These are checked left to right and they are judged in alphabetical order.
+    "a" is less than "b" since b is later in the alphabet
+    "West" is less than "Went"
+        "w" is equal
+        "e" is equal
+        "s" is less than "n"
+    When comparing strings the unicode is checked and seen to be greater or less not th actual letters.
+    When creating unicode dictionary the uppercase were letters added first. Therefore:
+        "a" is greater than "A"
+    If you dont want to check that closely you can use the .toLowerCase()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Conditional Branching
+    The "if" statement
+        This "if" statement is used to check a conditional statement
+        It will either be "true" and proceed or "false" and skip
+        The conditional is palced in the parameters of the if statement
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The Many Forms of "if"
+        The standard form of "if" is as folows:
+        if(conditional == true){
+            console.log('it was true');
+        }
+        The "if" statement will always try to do a bolean conversion before checking.
+        For example: a string is always true unless it's empty. This is called being "falsy"
+        Other examples inclide:
+            ""
+            Underfined
+            NaN
+            Null
+            0
+        You can also palce a value into the conditional rather than a compariosn and it will still work if the Boolean conversion outputs a true.
+        if(true)console.log('works');
+        if(0)console.log('doesnt work');
+        
+        let check = "false";
+        if(check) console.log('this works too');
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The "else" condition
+        You can define something "else" to happen in case the value is false
+        This will happen no matter what if the condition is flase so it doesnt require a condition. It shares the other half of the if conditional.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    "else if" - Last one
+        If you want to have several cascading checks through if statements you can use "else if" and create a second condition to check before failing.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
