@@ -44,3 +44,33 @@ if(T){
 }else{
     console.log(`it was false`);
 }
+
+let question1 = prompt("Is minecraft better than fortnight (Yes or No)")
+let question2 = prompt("What is 93 + 7")
+let question3 = prompt("What was the answer to the first question")
+let question4 = prompt("What is 33 - 3 + 5")
+let question5 = prompt("Just write 'no' ")
+
+let userGrade = 0
+
+if(question1.toLowerCase() == 'yes'){
+    userGrade += 1
+}
+
+if(question2 == 100){
+    userGrade += 1
+}
+
+if(question3.toLowerCase() == 'yes'){
+    userGrade += 1
+}
+
+if(question4 == 35){
+    userGrade += 1
+}
+
+if(question5.toLowerCase() == 'no'){
+    userGrade += 1
+}
+
+console.log(`You got a grade of ${userGrade}/5`);
