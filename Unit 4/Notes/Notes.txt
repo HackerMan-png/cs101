@@ -55,6 +55,12 @@ Conditional Branching
         
         let check = "false";
         if(check) console.log('this works too');
+
+        Ternary Operator
+            You thought we were finished? YOU FOOL!
+            If you want to create a small "if else" conditional then you can use the conditional operator "?"
+            This is it for real this time.
+                let result = (condition) ? value1 : value2;
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     The "else" condition
         You can define something "else" to happen in case the value is false
@@ -62,4 +68,72 @@ Conditional Branching
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     "else if" - Last one
         If you want to have several cascading checks through if statements you can use "else if" and create a second condition to check before failing.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Multiple "?"s - DONT DO THIS
+        If you want to use the conditional operator as an else if then you can use multiple "?"s
+        let letterGrade = (grade > 90) ? 'A' :
+            (grade > 80) ? 'B' :
+            (grade > 70) ? 'C' :
+            (grade > 60) ? 'D' :
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Switch Conditions
+        If you are creating something like on the last slide with tons of checks then ere is a better way of checking called a switch case
+        Here you enter a parameter and then list cases for what to expect
+        The last one should be "default" as a catch all in case none of the cases are met
+        Last, it will run through all values unless you use "break"
+
+        Example:
+        switch (param) {
+            case "walk"
+                //your code here
+                break;
+            case "sleep";
+                //your code here
+            case "dream"
+                //your code here
+                break;
+            default:
+                //your code here
+        }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Logical Operators
+    Logic Operators
+        These are used to check multiple operands at once.
+        If you didn't use these you would have to create an if statement inside of an if statement to check that both are true before you output
+        Now you can check 2 or more operators at once
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Or operator - || 
+        That is the vertical line above the enter key
+        Or is the logical operator that will return  if 1 or more of these values are true.
+        ORs will go through every condition in parameters and stop as soon as they reach any truthy values.
+        Example:
+            if(shirt == "blue || shirt == "red" || shirt == "green" || shirt == "pink"){
+                alert("Lookin' good)
+            }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    And Operator - &&
+        The AND operator uses 2 ampersands (&&)
+        It works similar to the OR operator but requires that all the checks are truthy
+        The computer will go through every condition in the parameter and exit the conditional as soon as a falsy operand appears, if none appear then it will continue.
+        Example:
+            let tvOn = true;
+            let radioOn = true;
+            let computerOn = true;
+            if(tvOn && radioOn && computerOn){
+                alert("you have too much on... dont waste power")
+            }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    NOT Operator - !
+        The not operator is just an exclamation point and can be put in front an equal sign or an operand
+        All this does is take the truthy or falsy value of the operand and trurns the opposite value
+        Example:
+            let mapMissing = false
+            let noDirections = true
+            let gas = 10
+            if(gas != 0 && (!mapMissing || !noDirections)){
+                alert{"The road trip is on!"};
+            }else{
+                alert("You're missing something")
+            }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
