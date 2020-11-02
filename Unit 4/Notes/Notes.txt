@@ -136,4 +136,141 @@ Logical Operators
             }else{
                 alert("You're missing something")
             }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The Nullish Coalescing Operator
+        This is the newst eperator added to the JS language and doesnt work on browsers that aren't updated.
+        This operator will check to make sure that the first value is not null or undefined, it if is then you can define a default value.
+        this is called a "nullish" value
+        Example:
+            let value = undefined;
+            console.log(value ?? 'this is not defined')
+        How it used to be
+        Before the other operator they would still need to check to make sure that the input had a balue by using the following
+            if(value !== null && value != undefined){
+                return value;
+            } else{
+                return "This is undefined";
+            }
+        Now we can just say
+            console.log(value ?? "This is not defined")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Chaining the Operators
+        You can check several things in a row and it will return th first non nullish value.
+        This is still too new to be tested in node.
+        Example:
+            let a = null;
+            let b = undefined;
+            let c = "";
+            let d = "This is the last thing";
+
+            console.log(a ?? b ?? c ?? d); // ""
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Using || instead
+        You can istead use || but the difference is that any "falsy" value will be skipped and not  just nullish.
+        So it will skip "", 0's and false
+        Example:
+            let a = null;
+            let b = undefined;
+            let c = "";
+            let d = "This is the last thing";
+
+            console.log(a || b || c || d) // "this is the last thing"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loops
+    The for loop
+        A for loop is amde up of 3 parameters, seperated by semicolons
+            What value are you starting your loop at
+            What condition needs to be met for the loop to end
+            How much should your value change by every time a loop ends
+        For(starting_Value; end_Condition; increment){
+            //Code that will be looped
+        }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The loop order
+        The order of a loop is:
+            Check the condition, if true continue, if false end
+            Run the code in the body
+            Increase by the increment (called step) and repeat
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Basic for Loop
+        Normally you will start with 1 as a starting value
+        This initial value needs to be stored in a variable since it will be changing throughout the duration of the code.
+        In order to do this we create a new variable, usually named i (for increment) and set it equal to 1
+        Example: for(let i = 1;
+
+        Then you need to place an end condition, these will vary a lot depending on what you want to do but for now we will create one that will happen 2 times
+        As long as i is less than 3 it will run the loop
+        Example: for(let i = 1; i < 3
+
+        These go up by a set amount every time.
+        The most common way to go up 1 at a time and the best way to do that is with the incremental operator, i++
+        Example: for(let i =1; i < 3; i++){
+            //code to repeat here
+        }
+
+        The last thing you do is add a bit of code to run in the bodythat will happen every time the loop executes
+        Normally this will involve the i value since it will be changing so let's use it as an example
+        Example:
+            for(let i = 0; i < 3; i++){
+                console.log(`this has happened ${i} times`)
+            }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Skipping Parts of Your Loop
+        If you already have the starting vlaue initialized before hand you do not have to declare it in your loop
+        This isn't a normal thing to do and can lead to some major confusion if your variables are not correctly named
+
+        You can also skip the step potion is if you are stepping it inside of the loop.
+        I would not recomemend doing this eaither as it can be very confusing 
+
+        There are better ways of doing this and you really shouldn't anyway but if you want to be a ninja i figured i would mention this.
+        You can skip every part of the parameters an it will repeat forver.
+            For(;;) {
+                //repeats without limits
+            }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    While Loop
+        A while loop is a little different, it will keep running until the condtion returns falsy.
+        This is very similar to a for loop but the difference comes with the parameters.
+        You ONLY declare the condition not the start or the step.
+        Example:
+            while (condition) {
+                //code
+                //called "body"
+            }
+        Even though you dont declare the initial and the step you normally need to use them anyways.
+        This is a stardard while loop 
+            let i = 0
+            while (i < 3 ) { // shows 0,then 1, then 2
+                console.log(i);
+                i++;
+            } 
+        
+        Something to consider...
+            Since while loops end on falsy values you can end up on a 0 without any extra code.
+            Example:
+            let i = 3;
+            while (i) {
+                // when i becomes 0, the condition becomes falsy, and the loop stops
+                alert(i);
+                i--;
+            }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Do While Loop
+        A while loop will check the condition to make sure it works and then move on to the body.
+        Therefore there is a chance that the condition fails immediately and the loop never runs.
+        To avoid this the do... while loop was created. This acts just like a while loop but it checks the condition at the end meaning it will always run at least once.
+
+        This is written and used very similarly to a while loop
+            let i = 0
+            do{
+                console.log(i);
+                i++;
+            } while (i < 3)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Breaking the Loop
+        You can stop the loop at any point if you'd like if you use the break; statement.
+        Let's create an example together that uses this and finds the sum, amount of grades, average, and letter grade for a student.
+        
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
