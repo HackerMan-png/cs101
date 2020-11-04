@@ -270,7 +270,36 @@ Loops
     Breaking the Loop
         You can stop the loop at any point if you'd like if you use the break; statement.
         Let's create an example together that uses this and finds the sum, amount of grades, average, and letter grade for a student.
-        
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Labeling You Loops
+        You are able to name your loops by giving them labels. Just a name with a colon "main:"
+        This is incredibly important when creating a complicated system of nested loopsThis can only effect loops in your nest. It can not move to any loop.
+    
+        Example:
+        outer:
+        for(let i = 0; i < 3; i++){
+            for( let j = 0; j < 3; j++){
+                let input = prompt(`Value at coords (${i},${j})`);
+
+                // if an empty string or canceld, then break out of both loops
+                if (!input) break outer; //(*)
+
+                //do something with the value
+            }
+        }
+        alert('Done!')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The Switch Statement
+        We briefly mentioned this earlier but now we are going to teach this a little deeper now.
+        The switch statement is used to replace multiple if checks
+
+        No Breaks on the Switch Bus
+            When you do not add breaks the switch case will continue without any checks and complete ALL the code after the first true.
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

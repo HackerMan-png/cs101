@@ -140,10 +140,10 @@
 // let milesDriven = 3145;
 // if(flatTire == true || engineLight == true || milesDriven > 30000){
 //     console.log(`Fix car`);
-    
+
 // }else{
 //     console.log(`Car is fine`);
-    
+
 // }
 
 // let pen = true
@@ -153,10 +153,10 @@
 
 // if((pen && paper) || (mouse && keyboard)){
 //     console.log(`You're good to go!`);
-    
+
 // }else{
 //     console.log(`You forgot something`);
-    
+
 // }
 
 // let upLate = true;
@@ -164,7 +164,7 @@
 // let breakfastSkipped = true;
 // if(!upLate && !manyGames && !breakfastSkipped){
 //     console.log(`pass test`);
-    
+
 // }
 
 
@@ -180,21 +180,21 @@
 
 // for(i = 0; i <= 9; i++){
 //     console.log(`This is nice`);
-    
+
 // }
 
 // for(i = 11; i >= 1; i -= 2){
 //     console.log(`${i}`);
-    
+
 // }
 
 // let number
 // let string = ``
 // for(i = 0; i > 5; i++){
-    
+
 //     number += Math.floor(Math.random() * 101) * i
 //     console.log(i);
-    
+
 //     string += `${i}, `
 // }
 // console.log(string);
@@ -230,9 +230,174 @@
 // console.log(`Average: ${average}`);
 // console.log(`Grade: ${grade}`);
 
+// let numbers = []
 
-for(let i = 0; i < 100; i++){
-    if(i % 5 == 0) continue;
-    console.log(i);
+// for(let i = 0; i < 5; i++){
+//     numbers += `${Math.floor(Math.random()* 101)}, `
+// }
+// console.log(numbers);
+
+// main:
+// for(let i = 0; i < 50; i++){
+//     if(i % 2 == 1) continue main;
+//     console.log(i);
+// }
+
+
+// let i, j;
+
+// loopOuter:
+// for(i = 0; i<3; i++){
+//     loopInner:
+//     for(j = 0; j<3; j++){
+//         if(i == j){
+//             continue loopOuter
+//         }else{
+//             console.log(`i = ${i}, j = ${j}`);
+//         }
+//     }
+// }
+
+// let number = 0
+
+// for(i = 0; i <= 1000; i++){
+//     number += i
+// }
+// console.log(number);
+
+
+// let number = 1
+
+// for(i = 93; i <= 845; i++){
+//     if(i % 2 == 1){
+//         number += i
+//     }
+// }
+// console.log(number);
+
+// let number = 1
+// for(i = 1; i <= 400; i++){
+//     if(i % 6 == 0){
+//         number *= i
+//     }
+// }
+// console.log(number);
+
+
+// let input = 101;
+
+// for(i = 2; i < input; i++)
+//     if(input % i == 0){
+//         console.log(`Not prime`);
+//         break;
+//     }else if(i == (input - 1)){
+//         console.log(`Is prime`);
+
+//     }
+
+
+// let numbers = '';
+// for (let val = 1; val < 100; val++) {
+//     if (val == 1) {
+//         numbers += '1, ';
+//         continue;
+//     } else if (val == 2) {
+//         numbers += '2, '
+//     }
+
+//     for (i = 2; i < val; i++) {
+
+
+//         if (val % i == 0) {
+//             break;
+//         } else {
+//             numbers += `${val}, `
+//             break;
+//         }
+//     }
+// }
+
+// console.log(numbers)
+
+let input = 3
+let number = 1
+
+for(i = 1; i <= input; i++){
+    number *= i
+} 
+
+console.log(number)
+
+// let gcf = 0
+// let num1 = 18
+// let num2 = 24
+
+// for (i = 0; i <= num1; i++) {
+//     if (num1 % i == 0) {
+//         if (num2 % i == 0) {
+//             gcf = i
+
+//         }
+
+//     }
+// }
+// console.log(gcf)
+
+
+// let input = 5
+// let string = ''
+
+// for(i = 1; i <= input; i++){
+//     string += '*'
+//     console.log(string)
+//     if(i == input){
+//         for(j = i - 2; j >= 0; --j){
+//             string = string.slice(0, -1)
+//             console.log(string)
+//         }
+//     }
+// }
+
+
+// let number1 = 0
+// let number2 = 1
+// let input = 10
+// let temp = 0
+// let string = "0, 1, "
+// for(i = 1; i <= input - 2; i++){
+//     string += (number1 + number2) + ", "
+
+//     temp = number1 + number2;
+//     number1 = number2;
+//     number2 = temp;
+// }
+
+// console.log(`${string}`)
+
+// let input = 5
+// let number = 0
+// let answer = 0
+// for(i = 0; i <= input; i++){
+//     number += i
+//     console.log(number);
+
+//     answer += number
+// }
+// console.log(answer);
+
+
+
+// input = 8;
+// let line = "";
+// let num = 0;
+
+// for(let n = 0; n <= input; n++){
+
+//     for(let i = 0; i <= input; i++){
+//         num = Math.abs(i - n)
+//         line += num + " "
+//     }
+//     console.log(line);
+//     line = ""
     
-}
+// }
