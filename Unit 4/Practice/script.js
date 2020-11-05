@@ -319,14 +319,14 @@
 
 // console.log(numbers)
 
-let input = 3
-let number = 1
+// let input = 3
+// let number = 1
 
-for(i = 1; i <= input; i++){
-    number *= i
-} 
+// for(i = 1; i <= input; i++){
+//     number *= i
+// } 
 
-console.log(number)
+// console.log(number)
 
 // let gcf = 0
 // let num1 = 18
@@ -387,7 +387,7 @@ console.log(number)
 
 
 
-// input = 8;
+// let input = 8;
 // let line = "";
 // let num = 0;
 
@@ -401,3 +401,63 @@ console.log(number)
 //     line = ""
     
 // }
+
+
+
+
+// let box1 = [1, 3, 6, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31]
+// let box2 = [2, 3, 6, 7, 10, 11, 13, 15, 18, 19, 22, 23, 26, 27, 30, 31]
+// let box3 = [4, 5, 6, 7, 12, 13, 14, 15, 20, 21 ,22, 23, 28, 29, 30, 31]
+// let box4 = [8, 9, 10, 11, 12, 13, 14, 15, 24, 25, 26, 27, 28, 29, 30, 31]
+// let box5 = [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+// let input = 19
+// let output =[0, 0, 0, 0, 0]
+// for(let i of box1){
+//     if(input == i){
+//         output[4] = 1
+//     }
+// }
+// for(let i of box2){
+//     if(input == i){
+//         output[3] = 1
+//     }
+// }
+// for(let i of box3){
+//     if(input == i){
+//         output[2] = 1
+//     }
+// }
+// for(let i of box4){
+//     if(input == i){
+//         output[1] = 1
+//     }
+// }
+// for(let i of box5){
+//     if(input == i){
+//         output[0] = 1
+//     }
+// }
+// console.log(`${output[4] output[3] output[2] output[1] output[0]}`);
+
+
+let arr = ["jazz", "blues"]
+
+arr.push("R&B")
+
+if(arr.length % 2 == 0){
+
+}else{
+    arr[Math.floor(arr.length/2)] = "classic"
+    
+}
+arr.unshift("rap", "acapella")
+
+console.log(arr);
+
+
+
+let test = ["yes", "no", "maybe", "sure", "nope",]
+
+
+if(test[Math.floor(test.length / 2)])
