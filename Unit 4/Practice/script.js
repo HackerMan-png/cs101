@@ -230,95 +230,87 @@
 // console.log(`Average: ${average}`);
 // console.log(`Grade: ${grade}`);
 
+// let numbers = []
 
-// let input = 5
-// let number = 1
+// for(let i = 0; i < 5; i++){
+//     numbers += `${Math.floor(Math.random()* 101)}, `
+// }
+// console.log(numbers);
 
-// for(i = 1; i <= input; i++){
-//     number *= i
-// } 
-
-// console.log(number)
-
-
-
-
-
+// main:
+// for(let i = 0; i < 50; i++){
+//     if(i % 2 == 1) continue main;
+//     console.log(i);
+// }
 
 
+// let i, j;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let input = 5
-// let stringThingy = ""
-
-// for (i = 0; i <= input; i++) {
-//     stringThingy += '*'
-//     console.log(stringThingy)
-
-//     if (i == input) {
-//         for (i = 5; i = 0; i--) {
-//             stringThingy -= '*'
-//             console.log(stringThingy)
+// loopOuter:
+// for(i = 0; i<3; i++){
+//     loopInner:
+//     for(j = 0; j<3; j++){
+//         if(i == j){
+//             continue loopOuter
+//         }else{
+//             console.log(`i = ${i}, j = ${j}`);
 //         }
 //     }
 // }
 
 // let number = 0
-// let number2 = 1
-// let input = 10
-// let string = ""
+
+// for(i = 0; i <= 1000; i++){
+//     number += i
+// }
+// console.log(number);
 
 
+// let number = 1
 
-// console.log(string)
-
-// let val = 100
-// let prime;
-
-// for(i = 2; i < val; i++) {
-//     if(val % i == 0) {
-//         prime = false;
-//         break;
-//     } else {
-//         continue;
+// for(i = 93; i <= 845; i++){
+//     if(i % 2 == 1){
+//         number += i
 //     }
 // }
+// console.log(number);
 
-// if(prime == false) {
-//     console.log('Not prime');
-// } else {
-//     console.log('Prime');
+// let number = 1
+// for(i = 1; i <= 400; i++){
+//     if(i % 6 == 0){
+//         number *= i
+//     }
 // }
+// console.log(number);
 
-// let numbers = [];
-// for(let val = 1; val < 100; val++){
-//     if(val == 1){
+
+// let input = 101;
+
+// for(i = 2; i < input; i++)
+//     if(input % i == 0){
+//         console.log(`Not prime`);
+//         break;
+//     }else if(i == (input - 1)){
+//         console.log(`Is prime`);
+
+//     }
+
+
+// let numbers = '';
+// for (let val = 1; val < 100; val++) {
+//     if (val == 1) {
 //         numbers += '1, ';
 //         continue;
-//     }else if(val == 2){
+//     } else if (val == 2) {
 //         numbers += '2, '
 //     }
 
-//     for (i = 2; i < val; i++){
-//         if(val % i == 0) {
+//     for (i = 2; i < val; i++) {
+
+
+//         if (val % i == 0) {
 //             break;
-//         } else{
+//         } else {
 //             numbers += `${val}, `
 //             break;
 //         }
@@ -327,21 +319,7 @@
 
 // console.log(numbers)
 
-// let number = 0
-// let number2 = 1
-// let input = 20
-// let string = ""
-// for(i = 1; i <= input; i++){
-//     string += `${number}, ${number2}, `
-//     number += number2
-//     number2 += number
-
-// }
-
-// console.log(`${string}`)
-
-
-// let input = 5
+// let input = 3
 // let number = 1
 
 // for(i = 1; i <= input; i++){
@@ -350,7 +328,7 @@
 
 // console.log(number)
 
-// let gcf = ""
+// let gcf = 0
 // let num1 = 18
 // let num2 = 24
 
@@ -366,13 +344,118 @@
 // console.log(gcf)
 
 
-// let input = 10
+// let input = 5
 // let string = ''
 
 // for(i = 1; i <= input; i++){
 //     string += '*'
 //     console.log(string)
+//     if(i == input){
+//         for(j = i - 2; j >= 0; --j){
+//             string = string.slice(0, -1)
+//             console.log(string)
+//         }
+//     }
 // }
 
 
+// let number1 = 0
+// let number2 = 1
+// let input = 10
+// let temp = 0
+// let string = "0, 1, "
+// for(i = 1; i <= input - 2; i++){
+//     string += (number1 + number2) + ", "
+
+//     temp = number1 + number2;
+//     number1 = number2;
+//     number2 = temp;
+// }
+
+// console.log(`${string}`)
+
+// let input = 5
+// let number = 0
+// let answer = 0
+// for(i = 0; i <= input; i++){
+//     number += i
+//     console.log(number);
+
+//     answer += number
+// }
+// console.log(answer);
+
+
+
+// let input = 8;
+// let line = "";
+// let num = 0;
+
+// for(let n = 0; n <= input; n++){
+
+//     for(let i = 0; i <= input; i++){
+//         num = Math.abs(i - n)
+//         line += num + " "
+//     }
+//     console.log(line);
+//     line = ""
+    
+// }
+
+
+
+
+// let box1 = [1, 3, 6, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31]
+// let box2 = [2, 3, 6, 7, 10, 11, 13, 15, 18, 19, 22, 23, 26, 27, 30, 31]
+// let box3 = [4, 5, 6, 7, 12, 13, 14, 15, 20, 21 ,22, 23, 28, 29, 30, 31]
+// let box4 = [8, 9, 10, 11, 12, 13, 14, 15, 24, 25, 26, 27, 28, 29, 30, 31]
+// let box5 = [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+// let input = 19
+// let output =[0, 0, 0, 0, 0]
+// for(let i of box1){
+//     if(input == i){
+//         output[4] = 1
+//     }
+// }
+// for(let i of box2){
+//     if(input == i){
+//         output[3] = 1
+//     }
+// }
+// for(let i of box3){
+//     if(input == i){
+//         output[2] = 1
+//     }
+// }
+// for(let i of box4){
+//     if(input == i){
+//         output[1] = 1
+//     }
+// }
+// for(let i of box5){
+//     if(input == i){
+//         output[0] = 1
+//     }
+// }
+// console.log(`${output[4] output[3] output[2] output[1] output[0]}`);
+
+
+// let arr = ["jazz", "blues"]
+
+// arr.push("R&B")
+
+// if(arr.length % 2 == 0){
+
+// }else{
+//     arr[Math.floor(arr.length/2)] = "classic"
+    
+// }
+// arr.unshift("rap", "acapella")
+
+// console.log(arr);
+
+
+
+// let test = ["yes", "no", "maybe", "sure", "nope",]
 

@@ -1,102 +1,104 @@
-The Comparers
-    We already went over these but the 3 ways to compare things are:
-    ==
-        Checks the 2 values after converting everything to strings
-    ===
-        Checks the two values without converting
-    Object.is()
-        Checks the two values without handling + or - or NaN
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Comparisions
-    When you compare things you will always get either true or false
-    You need to tell the computer what the 2 things are that need to be compared and then how to compare them.
-    Ex. alert(2 = 2) // true
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Number Comparisions
-    Thi is pretty obvious...
-    You compare numbers just like math and it's either true or false just like math
-    Ex. alert(5 > 5) //false
-        alert(4 <= 5) //true
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-String Comparisions
-    These are checked left to right and they are judged in alphabetical order.
-    "a" is less than "b" since b is later in the alphabet
-    "West" is less than "Went"
-        "w" is equal
-        "e" is equal
-        "s" is less than "n"
-    When comparing strings the unicode is checked and seen to be greater or less not th actual letters.
-    When creating unicode dictionary the uppercase were letters added first. Therefore:
-        "a" is greater than "A"
-    If you dont want to check that closely you can use the .toLowerCase()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Conditional Branching
-    The "if" statement
-        This "if" statement is used to check a conditional statement
-        It will either be "true" and proceed or "false" and skip
-        The conditional is palced in the parameters of the if statement
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    The Many Forms of "if"
-        The standard form of "if" is as folows:
-        if(conditional == true){
-            console.log('it was true');
-        }
-        The "if" statement will always try to do a bolean conversion before checking.
-        For example: a string is always true unless it's empty. This is called being "falsy"
-        Other examples inclide:
-            ""
-            Underfined
-            NaN
-            Null
-            0
-        You can also palce a value into the conditional rather than a compariosn and it will still work if the Boolean conversion outputs a true.
-        if(true)console.log('works');
-        if(0)console.log('doesnt work');
-        
-        let check = "false";
-        if(check) console.log('this works too');
+Flow Control
+    The Comparers
+        We already went over these but the 3 ways to compare things are:
+        ==
+            Checks the 2 values after converting everything to strings
+        ===
+            Checks the two values without converting
+        Object.is()
+            Checks the two values without handling + or - or NaN
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Comparisions
+        When you compare things you will always get either true or false
+        You need to tell the computer what the 2 things are that need to be compared and then how to compare them.
+        Ex. alert(2 = 2) // true
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Number Comparisions
+        Thi is pretty obvious...
+        You compare numbers just like math and it's either true or false just like math
+        Ex. alert(5 > 5) //false
+            alert(4 <= 5) //true
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    String Comparisions
+        These are checked left to right and they are judged in alphabetical order.
+        "a" is less than "b" since b is later in the alphabet
+        "West" is less than "Went"
+            "w" is equal
+            "e" is equal
+            "s" is less than "n"
+        When comparing strings the unicode is checked and seen to be greater or less not th actual letters.
+        When creating unicode dictionary the uppercase were letters added first. Therefore:
+            "a" is greater than "A"
+        If you dont want to check that closely you can use the .toLowerCase()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Conditional Branching
+        The "if" statement
+            This "if" statement is used to check a conditional statement
+            It will either be "true" and proceed or "false" and skip
+            The conditional is palced in the parameters of the if statement
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        The Many Forms of "if"
+            The standard form of "if" is as folows:
+            if(conditional == true){
+                console.log('it was true');
+            }
+            The "if" statement will always try to do a bolean conversion before checking.
+            For example: a string is always true unless it's empty. This is called being "falsy"
+            Other examples inclide:
+                ""
+                Underfined
+                NaN
+                Null
+                0
+            You can also palce a value into the conditional rather than a compariosn and it will still work if the Boolean conversion outputs a true.
+            if(true)console.log('works');
+            if(0)console.log('doesnt work');
+            
+            let check = "false";
+            if(check) console.log('this works too');
 
-        Ternary Operator
-            You thought we were finished? YOU FOOL!
-            If you want to create a small "if else" conditional then you can use the conditional operator "?"
-            This is it for real this time.
-                let result = (condition) ? value1 : value2;
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    The "else" condition
-        You can define something "else" to happen in case the value is false
-        This will happen no matter what if the condition is flase so it doesnt require a condition. It shares the other half of the if conditional.
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    "else if" - Last one
-        If you want to have several cascading checks through if statements you can use "else if" and create a second condition to check before failing.
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Multiple "?"s - DONT DO THIS
-        If you want to use the conditional operator as an else if then you can use multiple "?"s
-        let letterGrade = (grade > 90) ? 'A' :
-            (grade > 80) ? 'B' :
-            (grade > 70) ? 'C' :
-            (grade > 60) ? 'D' :
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Switch Conditions
-        If you are creating something like on the last slide with tons of checks then ere is a better way of checking called a switch case
-        Here you enter a parameter and then list cases for what to expect
-        The last one should be "default" as a catch all in case none of the cases are met
-        Last, it will run through all values unless you use "break"
+            Ternary Operator
+                You thought we were finished? YOU FOOL!
+                If you want to create a small "if else" conditional then you can use the conditional operator "?"
+                This is it for real this time.
+                    let result = (condition) ? value1 : value2;
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        The "else" condition
+            You can define something "else" to happen in case the value is false
+            This will happen no matter what if the condition is flase so it doesnt require a condition. It shares the other half of the if conditional.
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        "else if" - Last one
+            If you want to have several cascading checks through if statements you can use "else if" and create a second condition to check before failing.
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Multiple "?"s - DONT DO THIS
+            If you want to use the conditional operator as an else if then you can use multiple "?"s
+            let letterGrade = (grade > 90) ? 'A' :
+                (grade > 80) ? 'B' :
+                (grade > 70) ? 'C' :
+                (grade > 60) ? 'D' :
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Switch Conditions
+            If you are creating something like on the last slide with tons of checks then ere is a better way of checking called a switch case
+            Here you enter a parameter and then list cases for what to expect
+            The last one should be "default" as a catch all in case none of the cases are met
+            Last, it will run through all values unless you use "break"
 
-        Example:
-        switch (param) {
-            case "walk"
-                //your code here
-                break;
-            case "sleep";
-                //your code here
-            case "dream"
-                //your code here
-                break;
-            default:
-                //your code here
-        }
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Example:
+            switch (param) {
+                case "walk"
+                    //your code here
+                    break;
+                case "sleep";
+                    //your code here
+                case "dream"
+                    //your code here
+                    break;
+                default:
+                    //your code here
+            }
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Logical Operators
     Logic Operators
         These are used to check multiple operands at once.
@@ -270,7 +272,134 @@ Loops
     Breaking the Loop
         You can stop the loop at any point if you'd like if you use the break; statement.
         Let's create an example together that uses this and finds the sum, amount of grades, average, and letter grade for a student.
-        
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Labeling You Loops
+        You are able to name your loops by giving them labels. Just a name with a colon "main:"
+        This is incredibly important when creating a complicated system of nested loopsThis can only effect loops in your nest. It can not move to any loop.
+    
+        Example:
+        outer:
+        for(let i = 0; i < 3; i++){
+            for( let j = 0; j < 3; j++){
+                let input = prompt(`Value at coords (${i},${j})`);
+
+                // if an empty string or canceld, then break out of both loops
+                if (!input) break outer; //(*)
+
+                //do something with the value
+            }
+        }
+        alert('Done!')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The Switch Statement
+        We briefly mentioned this earlier but now we are going to teach this a little deeper now.
+        The switch statement is used to replace multiple if checks
+
+        No Breaks on the Switch Bus
+            When you do not add breaks the switch case will continue without any checks and complete ALL the code after the first true.
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Arrays
+    Introduction to Array Objects
+        Arrays allow you to create 1 object that can hold many values in a row.
+        These values are numbered to keep track of them starting with the number 0
+        These are so important because they come with a collection of methods to modify the order and the values stored in the collection.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Creating Arrays
+        There are 2 ways to initialize a new array but one is much more common.
+        let array = new Array();
+
+        let array = []; // use this one
+
+        The first one is left over from java, they require you to create a new array object.
+        The second way is faster and used in javascript.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Adding Values to Arrays
+        An  array can be added to by using square brakcets and commas
+
+        array = ["red", "orange", "yellow", "green"];
+
+        These values are referenced using the array name and their position in the array
+        array[0]; // is red;
+        array[3]; // is green;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Assigning Values
+        At any point you are able to define a specific value inside the array
+
+        array = ["red", "orange", "yellow", "green"];
+
+        array[2] // is yellow
+        array[2] = "pink";
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Checking the Array
+        We already saw that you can reference the array by using the index but you can also show the entire array as well.
+
+        console.log(array);
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Array.Length
+        One of the most common ways to use arrays is with loops. Normally this includes going through every value in your array and modifying it.
+        To find out how long your array im you use the method array.length
+        Example:
+            array = ["red", "orange", "yellow", "green"];
+            console.log(array.length); //returns the value 4
+
+        Array.length is a value 1 greater than the highest index. This is always true without any exceptions
+        A fun side effect of this is that you can actually overwrite the array.length and it will remove overflow items.
+        Example:
+            array = ["red", "orange", "yellow", "green"];
+            array.length = 2; // "red", "orange"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Array Methods
+        Array.push()
+            This will add an item to the end of your array
+        Array.pop()
+            Take an element away from the end of the array
+        Array.shift()
+            Takes an element to the front of the array
+        Array.unshift()
+            Adds an element to the front of the array.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Efficient Code
+        When working with arrays, or anything that happens over and over, it is always import to consider efficiency
+        With arrays array.shift() is EXTREMELY inefficient and get slower the more items you hve in the array.
+        For this reason you should always try to use push and pop as much as possible, only use shift if its unavoidable.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Looping Through the Array
+        There are a few ways to loop through every item in an array
+
+        for(let i = 0; i < array.length; i++)
+            This is the standary way of doing it. It is effective code and gives great understanding to others.
+        for(let item of array){}
+            This is the modern way of handling it and is an accepted way of handling looping
+        for(let i in array){}
+            Dont use this. it only uses numerical values.
+
+        While doing this you will use the i as the index value which will allow you to access every single value
+        For example if you wanted to increase all of the value in array by 3 times
+        Example:
+            for(let i = 0; i < array.length; i++){
+                array[i] *= 3;
+            }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The .split() method
+        The split method will take any string input you have and break it up every time it sees the string in the parameters and create an array using all of the created parts
+        Example:
+            let string = "this is sparta"
+            string = string.split('s');
+            console.log(string)
+            "thi's' i's' 's'parta"
+            ['thi', 'i', ' ', 'parta']
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
