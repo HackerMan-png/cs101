@@ -8,51 +8,51 @@ Flow Control
         Object.is()
             Checks the two values without handling + or - or NaN
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Comparisions
+    Comparisons
         When you compare things you will always get either true or false
         You need to tell the computer what the 2 things are that need to be compared and then how to compare them.
-        Ex. alert(2 = 2) // true
+        Ex. alert(2 == 2) // true
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Number Comparisions
-        Thi is pretty obvious...
+    Number Comparisons
+        This is pretty obvious...
         You compare numbers just like math and it's either true or false just like math
         Ex. alert(5 > 5) //false
             alert(4 <= 5) //true
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    String Comparisions
+    String Comparisons
         These are checked left to right and they are judged in alphabetical order.
         "a" is less than "b" since b is later in the alphabet
         "West" is less than "Went"
             "w" is equal
             "e" is equal
             "s" is less than "n"
-        When comparing strings the unicode is checked and seen to be greater or less not th actual letters.
-        When creating unicode dictionary the uppercase were letters added first. Therefore:
+        When comparing strings the unicode is checked and seen to be greater or less not the actual letters.
+        When creating a unicode dictionary the uppercase were letters added first. Therefore:
             "a" is greater than "A"
-        If you dont want to check that closely you can use the .toLowerCase()
+        If you don't want to check that closely you can use the .toLowerCase()
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Conditional Branching
         The "if" statement
             This "if" statement is used to check a conditional statement
             It will either be "true" and proceed or "false" and skip
-            The conditional is palced in the parameters of the if statement
+            The conditional is placed in the parameters of the if statement
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         The Many Forms of "if"
-            The standard form of "if" is as folows:
+            The standard form of "if" is as follows:
             if(conditional == true){
                 console.log('it was true');
             }
-            The "if" statement will always try to do a bolean conversion before checking.
+            The "if" statement will always try to do a boolean conversion before checking.
             For example: a string is always true unless it's empty. This is called being "falsy"
-            Other examples inclide:
+            Other examples include:
                 ""
-                Underfined
+                Undefined
                 NaN
                 Null
                 0
-            You can also palce a value into the conditional rather than a compariosn and it will still work if the Boolean conversion outputs a true.
+            You can also place a value into the conditional rather than a comparison and it will still work if the Boolean conversion outputs a true.
             if(true)console.log('works');
-            if(0)console.log('doesnt work');
+            if(0)console.log('does not work');
             
             let check = "false";
             if(check) console.log('this works too');
@@ -65,12 +65,12 @@ Flow Control
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         The "else" condition
             You can define something "else" to happen in case the value is false
-            This will happen no matter what if the condition is flase so it doesnt require a condition. It shares the other half of the if conditional.
+            This will happen no matter what if the condition is false so it doesn't require a condition. It shares the other half of the if conditional.
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         "else if" - Last one
             If you want to have several cascading checks through if statements you can use "else if" and create a second condition to check before failing.
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        Multiple "?"s - DONT DO THIS
+        Multiple "?"s - DON'T DO THIS
             If you want to use the conditional operator as an else if then you can use multiple "?"s
             let letterGrade = (grade > 90) ? 'A' :
                 (grade > 80) ? 'B' :
@@ -78,7 +78,7 @@ Flow Control
                 (grade > 60) ? 'D' :
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         Switch Conditions
-            If you are creating something like on the last slide with tons of checks then ere is a better way of checking called a switch case
+            If you are creating something like on the last slide with tons of checks then here is a better way of checking called a switch case
             Here you enter a parameter and then list cases for what to expect
             The last one should be "default" as a catch all in case none of the cases are met
             Last, it will run through all values unless you use "break"
@@ -123,12 +123,12 @@ Logical Operators
             let radioOn = true;
             let computerOn = true;
             if(tvOn && radioOn && computerOn){
-                alert("you have too much on... dont waste power")
+                alert("you have too much on... don't waste power")
             }
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     NOT Operator - !
         The not operator is just an exclamation point and can be put in front an equal sign or an operand
-        All this does is take the truthy or falsy value of the operand and trurns the opposite value
+        All this does is take the truthy or falsy value of the operand and turns the opposite value
         Example:
             let mapMissing = false
             let noDirections = true
@@ -140,14 +140,14 @@ Logical Operators
             }
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     The Nullish Coalescing Operator
-        This is the newst eperator added to the JS language and doesnt work on browsers that aren't updated.
-        This operator will check to make sure that the first value is not null or undefined, it if is then you can define a default value.
+        This is the newest operator added to the JS language and doesn't work on browsers that aren't updated.
+        This operator will check to make sure that the first value is not null or undefined, if so then you can define a default value.
         this is called a "nullish" value
         Example:
             let value = undefined;
             console.log(value ?? 'this is not defined')
         How it used to be
-        Before the other operator they would still need to check to make sure that the input had a balue by using the following
+        Before the other operator they would still need to check to make sure that the input had a value by using the following
             if(value !== null && value != undefined){
                 return value;
             } else{
@@ -157,7 +157,7 @@ Logical Operators
             console.log(value ?? "This is not defined")
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Chaining the Operators
-        You can check several things in a row and it will return th first non nullish value.
+        You can check several things in a row and it will return the first non null value.
         This is still too new to be tested in node.
         Example:
             let a = null;
@@ -180,7 +180,7 @@ Logical Operators
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Loops
     The for loop
-        A for loop is amde up of 3 parameters, seperated by semicolons
+        A for loop is made up of 3 parameters, separated by semicolons
             What value are you starting your loop at
             What condition needs to be met for the loop to end
             How much should your value change by every time a loop ends
@@ -210,7 +210,7 @@ Loops
             //code to repeat here
         }
 
-        The last thing you do is add a bit of code to run in the bodythat will happen every time the loop executes
+        The last thing you do is add a bit of code to run in the body that will happen every time the loop executes
         Normally this will involve the i value since it will be changing so let's use it as an example
         Example:
             for(let i = 0; i < 3; i++){
@@ -218,20 +218,20 @@ Loops
             }
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Skipping Parts of Your Loop
-        If you already have the starting vlaue initialized before hand you do not have to declare it in your loop
+        If you already have the starting value initialized before hand you do not have to declare it in your loop
         This isn't a normal thing to do and can lead to some major confusion if your variables are not correctly named
 
-        You can also skip the step potion is if you are stepping it inside of the loop.
-        I would not recomemend doing this eaither as it can be very confusing 
+        You can also skip the step potion if you are stepping it inside of the loop.
+        I would not recommend doing this either as it can be very confusing 
 
         There are better ways of doing this and you really shouldn't anyway but if you want to be a ninja i figured i would mention this.
-        You can skip every part of the parameters an it will repeat forver.
+        You can skip every part of the parameters and it will repeat forever.
             For(;;) {
                 //repeats without limits
             }
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     While Loop
-        A while loop is a little different, it will keep running until the condtion returns falsy.
+        A while loop is a little different, it will keep running until the condition returns falsy.
         This is very similar to a for loop but the difference comes with the parameters.
         You ONLY declare the condition not the start or the step.
         Example:
@@ -239,8 +239,8 @@ Loops
                 //code
                 //called "body"
             }
-        Even though you dont declare the initial and the step you normally need to use them anyways.
-        This is a stardard while loop 
+        Even though you don't declare the initial and the step you normally need to use them anyways.
+        This is a standard while loop 
             let i = 0
             while (i < 3 ) { // shows 0,then 1, then 2
                 console.log(i);
@@ -275,7 +275,7 @@ Loops
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Labeling You Loops
         You are able to name your loops by giving them labels. Just a name with a colon "main:"
-        This is incredibly important when creating a complicated system of nested loopsThis can only effect loops in your nest. It can not move to any loop.
+        This is incredibly important when creating a complicated system of nested loopsThis can only affect loops in your nest. It can not move to any loop.
     
         Example:
         outer:
@@ -283,7 +283,7 @@ Loops
             for( let j = 0; j < 3; j++){
                 let input = prompt(`Value at coords (${i},${j})`);
 
-                // if an empty string or canceld, then break out of both loops
+                // if an empty string or canceled, then break out of both loops
                 if (!input) break outer; //(*)
 
                 //do something with the value
@@ -297,13 +297,6 @@ Loops
 
         No Breaks on the Switch Bus
             When you do not add breaks the switch case will continue without any checks and complete ALL the code after the first true.
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Arrays
     Introduction to Array Objects
@@ -321,7 +314,7 @@ Arrays
         The second way is faster and used in javascript.
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Adding Values to Arrays
-        An  array can be added to by using square brakcets and commas
+        An  array can be added to by using square brackets and commas
 
         array = ["red", "orange", "yellow", "green"];
 
@@ -367,18 +360,18 @@ Arrays
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Efficient Code
         When working with arrays, or anything that happens over and over, it is always import to consider efficiency
-        With arrays array.shift() is EXTREMELY inefficient and get slower the more items you hve in the array.
-        For this reason you should always try to use push and pop as much as possible, only use shift if its unavoidable.
+        With arrays array.shift() is EXTREMELY inefficient and gets slower the more items you have in the array.
+        For this reason you should always try to use push and pop as much as possible, only use shift if it's unavoidable.
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Looping Through the Array
         There are a few ways to loop through every item in an array
 
         for(let i = 0; i < array.length; i++)
-            This is the standary way of doing it. It is effective code and gives great understanding to others.
+            This is the standard way of doing it. It is effective code and gives great understanding to others.
         for(let item of array){}
             This is the modern way of handling it and is an accepted way of handling looping
         for(let i in array){}
-            Dont use this. it only uses numerical values.
+            Don't use this. it only uses numerical values.
 
         While doing this you will use the i as the index value which will allow you to access every single value
         For example if you wanted to increase all of the value in array by 3 times
@@ -402,4 +395,3 @@ Arrays
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    
