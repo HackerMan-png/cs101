@@ -22,7 +22,7 @@
 // }else if(west == east){
 // 	direction = "same location"
 // }
-// console.log(`${Math.abs(west - east)} stations to the ${direction}`)
+// console.log(`The train is ${Math.abs(west - east)} stations to the ${direction}`)
 
 
 
@@ -52,7 +52,7 @@
 // }else if(west == east){
 // 	direction = "same location"
 // }
-// console.log(`${Math.abs(west - east)} stations to the ${direction}`)
+// console.log(`The train is ${Math.abs(west - east)} stations to the ${direction}`)
 
 
 //!WEST BRIDGE BROKEN ONE
@@ -79,12 +79,12 @@
 // }else if(west == east){
 // 	direction = "same location"
 // }
-// console.log(`${Math.abs(west - east)} stations to the ${direction}`)
+// console.log(`The train is ${Math.abs(west - east)} stations to the ${direction}`)
 
 
 //!BRAINDEAD
 
-// let string = "()))(()()()()())()(((()()()()()(()()()())()()()((()()()())()()()()((()()()";
+// let string = "()()()()()()()()()()()()";
 // let west = 0;
 // let east = 0;
 // let direction = "";
@@ -152,6 +152,6 @@
 // 	direction = "same location"
 // }
 
-// console.log(`${Math.abs(west - east)} stations to the ${direction}`)
+// console.log(`The train is ${Math.abs(west - east)} stations to the ${direction}`)
 
 
