@@ -389,9 +389,158 @@ Arrays
             "thi's' i's' 's'parta"
             ['thi', 'i', ' ', 'parta']
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Functions
+    Introduction to a Function
+        A function is a small bitof code that can be called and ran anypoint in your code.
+        If you are going to use a bit of code all over your code then you can just create that code in a function and cal lthe function
+        They also accept parameters and will always return exactly 1 value
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Layout of a Function
+        There are 4 parts of a function that you need to make.
+            The keyword function 
+            The name of the function
+            THe parameters of the function
+            Lastly the body of the function that holds the code
+        function functionName (parameters{
+            //function body
+        } 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Calling a Function
+        Once you have created your function youcan call them anytime with any parameter that you have created.
+        You do this by calling their name (just like you would a person in real life)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The Parameters
+        Unlike other code you can use a variable that is yet to be declared by passing it through the parameters.
+        This lets you accept many different inputs that can be used to change the outcome of your function.
+        Example:
+            function showMessage(from, text) {
+                //arguments: from, text
+                    alert(from + ': ' + text)
+            }
+            showMessage('Ann', 'Hello!'); //Ann; Hello!
+            
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    onClick
+        The easiest way to incorporate this into your website is using the onClick event listener.
+        This will allow you to call a function in the HTML to run some code on a button click.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The Holy Trinity
+        Now spend a little time modifying that button.
+        Make it rounded, orange, larger font with bold letters, centered on the page vertically and horizontally, and make the button larger to fit it all.
+        You have officially combined HTML, CSS, and JS. You are the most basic version of a web developer there is, buy you are a web developer now.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Local Variables
+        If a variable is called in a function then the variable is called a local variable and can only be accessed inside that function.
+        This is kind of like how we use the i variable for every loop without conflict
+        We are able to use the same variable over and over in the function.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Global Variables
+        A global variable exists outsidee of the function and can be accessed and modified by all functions.
+        If you try to call the samenamed variable in a function it will use the local version and not overwrite the global version
+        There are reasons to use both local and global variables so its really up to the situation for which is correct.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Default Values
+    When creating your parameters you can set them equal to something to make sure there is a default value. Then if nothing is entered in the parameters they will still have a value to input.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Returning a Value
+        You can make a function assign a value as well
+        This is used using the "return" keyword
+        There can only be one return value and as soon as it happens the function will end. No matter what.
+        The best part of returning a value is the ability to directly assign that value to a variable.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Proper Naming for Functions
+        Since functions do something and serve a purpose you need to name them using proper verbs
+            "getFunction"
+                returns a value
+            "calcFunction"
+                calculate something
+            "createFunctions
+                creates something
+            "checkFunction"
+                Checks something and returns a true or false
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Commenting!
+        Functions are usually very short and do A thing, only 1 thing.
+        Because of this, there are usually lots of functions that are created and used in longer code and therefore your functions MUST HAVE COMMENTS
+        It may also be better to split your functions into several smaller functions.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Function Expressions
+        A functionn expression is when you create your function inside of a "variable" of sorts
+        Below is an example of both:
+            function sayHi(name, text){
+                console.log(sayHi(name, text));
+            }
+
+            let sayHi = function(name, text){
+                console.log(sayHi(name, text));
+            }
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Expression vs. Declaration
+        Declarations (the first way we learned) has something called "hoisting", which means that it can be used before its created.
+        Example:
+            //this works
+            doStuff()
+            function doStuff(){
+
+            }
+        Expressions don’t have hoisting but they can be created and forgotten after use, saving your computer some brain power
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    When to use Each
+        This really depends on the code you want to run.
+        Function declarations are used if you want something usable in your entire code.
+        Function expressions are used when you want something smaller and to be used only where the function is available.
+        Remember to keep your code clean and efficient
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Arrow Functions
+        Arrow functions are a nicer way of writing function expressions
+        These are nor more or less efficient, they are just a more compact way of coding a function
+        PLEASE USE THE WAY THAT MAKES YOU MORE COMFORTABLE
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Basic Arrow Function
+        When creating the arrow function you can leave out the keyword function
+        The => tells the code what is returned from the function
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Use Strict
+        Every js file should start with the phrase
+            "use strict";
+        This is make sure that the js code uses the modern versions for behavior and not the outdated older versions, called "compatibility" version;
+        This won't break the code but if you ever want to turn js intoan OOP instead of OBP language, this is how you do it.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The DOM
+    Introduction to DOM
+        The DOM is the Document Object Model and it is how we scan the HTML for elements, IDs, Classes, and more to modify with JS.
+        The HTML that the script tag is used in is considered the "document" hance the name document object model.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Input and Output - DOM
+        The best way to communicate with the document (HTML file) is by using IDs.
+        We have been using classes to modify the styles of all of the different elements but now we can use the IDs to interact with the JS
+        
+        An inputcan be gotten from the HTML using the input boxes that we learned about and then using the .value method
+        This is a great way to get content from the user and then using it in the javascript
+
+        To update an existing element you can use the .textContent
+        This will change any of the text on the HTML so that you can display new information.
+        
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Modifying the styles  
+        CSS is a little more tempermental with the js changes, the best way to modify the styles of the HTML is to add and remove classes that you are already created in the CSS.
+        We do this is looking at the classlist and modifying it.
+        Example:
+            document.getElementById(idName).classList
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    classList
+        The classList method will create an array that you can use to see every class that is attached to the element that you use it on.
+        Once you have the list of classes you cando a few things like add more, remove some, or just check if a class is present at all.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    classList Methods
+        .add(className);
+            Allows you to add a new class to the element's list
+        .contains(className);
+            Allows you to check to see if the element has a certain class
+        .remove(className);
+            Removes a class from the list.
+        .toggle(className)
+            Turns a class on/off without removing it.
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

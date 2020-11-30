@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tic-Tac-Toe</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Jaxson Hunt">
+	<link rel="stylesheet" href="4x4.css">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="" type="image">
+	<meta property="og:image" content="">
+	<meta property="og:description" content="">
+	<meta property="og:title" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<main><br><br>
+		<div class="header">
+			<h1>Tic-Tac-Toe</h1>
+		</div><br><br>
+
+		<!-- Keeps track of which player and which turn -->
+		<div class="gameInfo">
+			<p id="player">Player: X</p>
+			<p id="turn">Turn: 0</p>
+		</div><br><br>
+
+		<!-- Buttons for playing the game -->
+		<div class="gameArea">
+			<div onclick="claimSpace('11')" id="button11" class="button11 button">
+			</div>
+			<div onclick="claimSpace('12')" id="button12" class="button12 button">
+			</div>
+			<div onclick="claimSpace('13')" id="button13" class="button13 button">
+			</div>
+			<div onclick="claimSpace('14')" id="button14" class="button14 button">
+			</div>
+
+			<div onclick="claimSpace('21')" id="button21" class="button21 button">
+			</div>
+			<div onclick="claimSpace('22')" id="button22" class="button22 button">
+			</div>
+			<div onclick="claimSpace('23')" id="button23" class="button23 button">
+			</div>
+			<div onclick="claimSpace('24')" id="button24" class="button24 button">
+			</div>
+
+			<div onclick="claimSpace('31')" id="button31" class="button31 button">
+			</div>
+			<div onclick="claimSpace('32')" id="button32" class="button32 button">
+			</div>
+			<div onclick="claimSpace('33')" id="button33" class="button33 button">
+			</div>
+			<div onclick="claimSpace('34')" id="button34" class="button34 button">
+			</div>
+
+			<div onclick="claimSpace('41')" id="button41" class="button41 button">
+			</div>
+			<div onclick="claimSpace('42')" id="button42" class="button42 button">
+			</div>
+			<div onclick="claimSpace('43')" id="button43" class="button43 button">
+			</div>
+			<div onclick="claimSpace('44')" id="button44" class="button44 button">
+			</div>
+		</div><br><br>
+
+
+		<!-- The score board that keeps track of how many wins each person has -->
+		<div class="scoreBoard">
+			<h3>Wins</h3><br>
+			<p id="xWins">X - 0 wins</p>
+			<p id="oWins">O - 0 wins</p>
+		</div><br>
+
+		<div class="reset">
+			<div onclick="restart()" class="resetButton">Restart</div>
+		</div>
+
+	</main>
+	<script src="4x4.js"></script>
+</body>
+
+</html>
