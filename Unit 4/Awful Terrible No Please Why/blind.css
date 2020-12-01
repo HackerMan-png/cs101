@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 100vh;
+	color: white;
+	background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='453' height='453' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%230e0e0e' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23111111' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%230e0e0e' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23111111' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23141414' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%230a0a0a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%230c0c0c' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%230e0e0e' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%230c0c0c' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%230a0a0a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%230e0e0e' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%230a0a0a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%230e0e0e' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%230c0c0c' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%230e0e0e' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+main{
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.gameArea{
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	gap: 0px;
+	justify-content: center;
+	background-color: black;
+	border-radius: 50px;
+	border: 2px white solid;
+}
+
+.button{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	font-size: 200px;
+	color: white;
+	user-select: none;
+}
+
+/* Row 1 */
+.button11{
+	border-right: 4px solid white;
+	border-bottom: 4px solid white;
+}
+.button12{
+	border-right: 4px solid white;
+	border-bottom: 4px solid white;
+}
+.button13{
+	border-bottom: 4px solid white;
+}
+
+/* Row 2 */
+.button21{
+	border-right: 4px solid white;
+	border-bottom: 4px solid white;
+}
+.button22{
+	border-right: 4px solid white;
+	border-bottom: 4px solid white;
+}
+.button23{
+	border-bottom: 4px solid white;
+}
+
+/* Row 3 */
+.button31{
+	border-right: 4px solid white;
+
+}
+.button32{
+	border-right: 4px solid white;
+
+}
+
+
+.winningButtons{
+	color: rgb(0, 129, 28);
+}
+
+.reset{
+	width: 106px;
+	margin: 0 auto;
+	border: 3px solid black;
+}
+.resetButton{
+	border: 2px solid black ;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	user-select: none;
+}
